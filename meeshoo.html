@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+body{
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-image:url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAxL3Jhd3BpeGVsX29mZmljZV8yMl9hX3Bob3RvX29mX2FfY29mZmVlX3Nob3BfaW5fcmFpbnlfZGF5X3dpdGhfdF84Mzk1NTQ1Zi01Y2FjLTQzMDQtYWM2Yy02MTMzNDM4MGNjNWFfMS5qcGc.jpg");
+    
+
+}
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "arial";
+            font-weight: 400;
+            font-style: normal;
+        }
+            body {
+                
+                padding-left:6%;
+                background-size:100%;
+                background-color:rgba(0, 0, 0, 0.13);
+        }
+    .center{
+        
+    }
+    div {
+        
+        height: 150px;
+        width: 300x;
+        padding-bottom:20px;
+        padding-top:20px;
+    }
+
+        .main-container{
+            height: 300px;
+            width: 400px;
+            padding-top:20px;;
+        }
+        #error-mes{
+            font-size: medium;
+        }
+        #title
+        {
+            
+            color:white;
+            padding-left:10%;
+            font-weight: bolder;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-right:50%;
+            font-size:50px;
+            width:400px;
+            margin-bottom: 30px;
+        }
+        #logint
+        {
+          padding-top:10px;
+        }
+       #supplier{
+        background-color: rgba(0, 0, 0, 0.215);
+        font-size:30px;
+        color:white;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        padding-right:px;
+        width:400px;
+       }
+        #for{
+            color:white;
+        }
+        #log{
+            background-color:rgba(181, 120, 189, 0.349);
+            color:white;
+            font-style:bold;
+            width:50px;
+            height:40px;
+            padding:0%;
+        }
+
+        #create{
+            color:white;
+        }
+        .aaa{
+
+       background-color: black;
+            opacity:0.9;
+            height:150%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        
+        <div class="main-container">
+        <h1 id="title">ME BAZAR</h1>
+        <br><br>
+        <div class="aaa">
+<a href="logo.html" style="float: left;position: relative; font-size:25px;left: 15px; top: 15px;color:white">Back:</a>
+<br><br><br>
+<br>
+<h3 id="supplier" style="font-family:Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:white;">Login To Your Supplier Panel</h3>
+<br><br>
+<input type="text" name="" id="uname" placeholder="enter email" style="background-color:rgba(181, 120, 189, 0.349);width:200px;height:40px;color:white;font-size:20px;" required>
+<br><br>
+<input type="password" id="pname" placeholder="enter password" style="background-color:rgba(181, 120, 189, 0.349);width:200px;height:40px;font-size:20px;color:white;" required>
+<br><br>
+<br>
+<a href="forgot.html" id="for">Forgot password</a>
+<br>
+<br><br>
+<button onclick="clic()" id="log">Log in</button>
+
+<h1 id="error-mes"></h1>
+<br>
+<br>
+    <a href="account.html" id="create">Create a supplier account</a>
+</div>
+</div>
+
+</center>
+<script>
+    function clic(){
+        let x=document.getElementById("uname").value
+        let y=document.getElementById("pname").value
+
+        if(x==""||y==""){
+            document.getElementById('error-mes').innerHTML = 'Please fill in both email and password';
+        }
+        else{
+            location="ethic.html"
+        }
+    }
+</script>
+</body>
+</html>

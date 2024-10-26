@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsmvrXoojP-LQ7XNFhdHZWid3SjYr-1YiSGQ&s");
+        background-size:50%;
+        background-repeat:repeat;
+        color:white;    
+        
+    }
+    #i{
+
+        background-color:black;
+        color:white;
+        opacity:0.9;
+        height:35px;
+        font-family:Arial, Helvetica, sans-serif;
+        height:50px;
+        width:200px;
+    }
+    #h{
+        color:white;
+    }
+</style>
+<body>
+    <br><br><br>
+    <center>
+        <center><h1 id="h">Welcome to ME-BAZAR</h1></center>
+    <br><br> <center><h2 id="h">Payment Sheet</h2></center>
+    <center>
+        <center>
+            <br><br>
+          <br><br><br><input type="text" placeholder="enter your  bank name" id="i"/><br><br>
+            <input type="number" placeholder="enter your last 4 digits number" id="i"/><br><br>
+            <input type="number" placeholder="card validate date" id="i"/><br><br>
+<button type="reset" onclick=msg()>Submit</button>
+<button type="reset" onclick=mm()>Back</button>
+</center>
+<script>
+    function msg(){
+        alert("subitted");
+    }
+</script>
+<script>
+    function mm(){
+        location="order.html"
+
+    }
+</script>
+<script>
+    function clic(){
+        let x=document.getElementById("xxxx").value
+        let y=document.getElementById("pname").value
+        let z=document.getElementById("ppname").value
+
+        if(x==""||y==""||z==""){
+            document.getElementById('error-mes').innerHTML = 'Please fill in both email and password';
+        }
+        else{
+            location="ethic.html"
+        }
+    }
+</script>
+</body>
+</html>
